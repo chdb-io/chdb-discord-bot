@@ -27,6 +27,7 @@ Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers
     - `DISCORD_APPLICATION_ID` - Your discord app's ID.
     - `DISCORD_PUBLIC_KEY` - Your discord app's public key.
     - `DISCORD_BOT_TOKEN` - Your bot's token.
+    - 'CHDB_API'- Your ClickHouse HTTP/S API _(optional)_
     - _Other environment variables are optional._
 3. Set `Interactions Endpoint URL` to `<micro_url>/bot/interactions`.
     - This is located in: `https://discord.com/developers/applications/{application_id}/information`
