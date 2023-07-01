@@ -30,7 +30,7 @@ Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers
     - _Other environment variables are optional._
 3. Set `Interactions Endpoint URL` to `<micro_url>/bot/interactions`.
     - This is located in: `https://discord.com/developers/applications/{application_id}/information`
-    - A Micro URL looks like this: `https://chatgpt-1-a1234567.deta.app`
+    - A Micro URL looks like this: `https://chdbdiscordbot-xxxxxxx.deta.app`
 4. Visit `<micro_url>/bot/api/dash/<discord_bot_token>` to register the slash commands for the first time.
    - If this fails, use the `register.sh` script with your `DISCORD_APPLICATION_ID` and `DISCORD_BOT_TOKEN`
    ```
@@ -44,6 +44,8 @@ Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers
 
 ## Powered by Deta.space
 This Discord bot is **SERVERLESS** which means it can run for **FREE** and be **ALWAYS online** on [Deta Space](https://deta.space)!  
+
+Code forked and adapted from [chatgpt-discord-bot](https://github.com/imptype/serverless-chatgpt-discord-bot)
 
 ## Links and Resources
 - **Deta Space Documentation:** https://deta.space/docs
