@@ -1,4 +1,5 @@
-<img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/020db902-a577-4bf4-a9ce-45403b166e19" width=400 >
+
+<img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/c759f2bc-ecd7-464c-aaab-b9bfbc9b3569" height=150 ><img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/020db902-a577-4bf4-a9ce-45403b166e19" height=130 >
 
 # chdb-discord-bot
 Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers](https://chdb.fly.dev) or any ClickHouse HTTP/S APIs
