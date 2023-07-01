@@ -1,0 +1,4 @@
+git+https://github.com/jnsougata/discohook
+git+https://github.com/jnsougata/deta
+uvicorn
+python-dotenv

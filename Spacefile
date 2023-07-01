@@ -1,0 +1,59 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: src/assets/logo.png
+micros:
+  - name: main
+    src: .
+    engine: python3.9
+    primary: true
+    include: 
+    - src/micros/main.py
+    - src/actions
+    - src/utils
+    run: uvicorn src.micros.main:app --log-level warning
+    dev: uvicorn src.micros.main:app --reload
+    presets:
+      env:
+      - name: PRESENCE_LOG_WEBHOOK_URL
+        description: Discord Webhook URL (for presence logs)
+        default: ''
+      - name: ERROR_LOG_WEBHOOK_URL
+        description: Discord Webhook URL (for presence error logs)
+        default: ''
+      - name: ALT_DETA_PROJECT_KEY
+        description: Alternative Deta Project Key (or uses default)
+        default: ''
+      - name: DISCORD_BOT_TOKEN
+        description: Discord Application/Bot Token
+    actions:
+      - id: 'presence'
+        name: 'Presence'
+        description: 'Gives the bot a status'
+        trigger: 'schedule'
+        default_interval: '* * * * *'
+
+  - name: bot
+    src: .
+    engine: python3.9
+    include: 
+    - src/micros/bot.py
+    - src/commands
+    - src/utils
+    run: uvicorn src.micros.bot:app --log-level warning
+    dev: uvicorn src.micros.bot:app --reload
+    public_routes:
+      - '/interactions'
+    presets:
+      env:
+      - name: DISCORD_APPLICATION_ID
+        description: Discord Application's ID
+      - name: DISCORD_PUBLIC_KEY
+        description: Discord Application's Public Key
+      - name: DISCORD_BOT_TOKEN
+        description: Discord Application/Bot Token (duplicate)
+      - name: CHDB_API
+        description: chDB/ClickHouse HTTP/S API URL
+        default: "https://chdb.fly.dev"
+      - name: ERROR_LOG_WEBHOOK_URL
+        description: Discord Webhook URL (for bot error logs)
+        default: ''
