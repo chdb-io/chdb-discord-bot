@@ -24,7 +24,6 @@ Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers
    4. Create a space app: `$space new`
    5. Push the space app: `$space push`
 2. Enter the environment variables (Space App Settings ➔ Configuration).<br>
-    <img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/3c43aba8-1e8a-4b1c-91e4-241a1ff5ba17" width=500 >
     - `DISCORD_APPLICATION_ID` - Your discord app's ID.
     - `DISCORD_PUBLIC_KEY` - Your discord app's public key.
     - `DISCORD_BOT_TOKEN` - Your bot's token.
