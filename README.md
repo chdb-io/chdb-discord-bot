@@ -23,20 +23,18 @@ Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers
    3. Make sure you're in the project folder: `$cd <folder>`
    4. Create a space app: `$space new`
    5. Push the space app: `$space push`
-2. Enter the environment variables (Space App Settings ➔ Configuration).
+2. Enter the environment variables (Space App Settings ➔ Configuration).<br>
+    <img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/3c43aba8-1e8a-4b1c-91e4-241a1ff5ba17" width=600 >
     - `DISCORD_APPLICATION_ID` - Your discord app's ID.
     - `DISCORD_PUBLIC_KEY` - Your discord app's public key.
     - `DISCORD_BOT_TOKEN` - Your bot's token.
     - 'CHDB_API'- Your ClickHouse HTTP/S API _(optional)_
     - _Other environment variables are optional._
-3. Set `Interactions Endpoint URL` to `<micro_url>/bot/interactions`.
+4. Set `Interactions Endpoint URL` to `<micro_url>/bot/interactions`.
     - This is located in: `https://discord.com/developers/applications/{application_id}/information`
     - A Micro URL looks like this: `https://chdbdiscordbot-xxxxxxx.deta.app`
-4. Visit `<micro_url>/bot/api/dash/<discord_bot_token>` to register the slash commands for the first time.
+5. Visit `<micro_url>/bot/api/dash/<discord_bot_token>` to register the slash commands for the first time.
    - If this fails, use the `register.sh` script with your `DISCORD_APPLICATION_ID` and `DISCORD_BOT_TOKEN`
-   ```
-   
-   ```
 6. Run `/ping` to make sure it's working! Enjoy!
 
 ## Test Commands
