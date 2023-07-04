@@ -27,5 +27,11 @@ async def query_command(interaction, query, format):
     params = {"default_format": format.value}
     headers = {"Content-Type": "text/plain;charset=UTF-8"}
     response = requests.post(api_url, params=params, data=query, headers=headers)
+    if response.status_code != 200:
+        await interaction.followup("Server error with unsupported format, status_code: {0}".format(response.status_code))
+        return
+    if len(response.content) == 0:
+        await interaction.followup("Query error")
+        return
 
     await interaction.followup(response.content.decode("utf-8"))
