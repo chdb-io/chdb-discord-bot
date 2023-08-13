@@ -47,7 +47,5 @@ Code forked and adapted from [chatgpt-discord-bot](https://github.com/imptype/se
 
 ## Links and Resources
 - **Deta Space Documentation:** https://deta.space/docs
-- **Deta Discord:** https://discord.gg/deta
 - **Discohook Discord:** https://discord.gg/xEEpJvE9py
 - **Discord API Documentation:** https://discord.com/developers/docs
-- **Space App Discovery Page:** https://deta.space/discovery/@imp1/chatgpt
