@@ -1,5 +1,7 @@
-
-<img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/c759f2bc-ecd7-464c-aaab-b9bfbc9b3569" height=150 ><img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/020db902-a577-4bf4-a9ce-45403b166e19" height=130 >
+<a href="https://chdb.fly.dev" target="_blank">
+  <img src="https://github.com/lmangani/chdb-discord-bot/assets/1423657/c759f2bc-ecd7-464c-aaab-b9bfbc9b3569" height=130 >
+<img src="https://avatars.githubusercontent.com/u/132536224" width=140 />
+</a>
 
 # chdb-discord-bot
 Serverless bot running SQL queries using [chDB](https://chdb.io) [public servers](https://chdb.fly.dev) or any ClickHouse HTTP/S APIs
